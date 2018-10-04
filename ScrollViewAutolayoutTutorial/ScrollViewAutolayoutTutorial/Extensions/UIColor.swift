@@ -9,6 +9,8 @@
 import UIKit
 
 extension UIColor {
+    
+    /// Inicializa uma UIColor a partir do valor hexadecimal
     convenience init(hex: String) {
         let scanner = Scanner(string: hex)
         scanner.scanLocation = 0
@@ -27,18 +29,22 @@ extension UIColor {
         )
     }
     
+    /// A cor usada nas caixas de texto
     static var textField: UIColor {
         return UIColor(hex: "F8F8F8")
     }
     
+    /// A cor usada nos botoes
     static var buttonRed: UIColor {
         return UIColor(hex: "C1272D")
     }
     
+    /// A cor do botao, quando pressionado
     static var pressedButton: UIColor {
         return UIColor(hex: "E54749")
     }
     
+    /// A cor do label
     static var grayLabel: UIColor {
         return UIColor(hex: "C9C8C5")
     }

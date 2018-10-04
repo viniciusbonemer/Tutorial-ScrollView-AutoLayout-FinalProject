@@ -9,17 +9,17 @@
 import UIKit
 
 /**
- A custom subclass of UIButton
+Uma subclessa de UIButton
  
- Provides an easy way of initializing a new Button and changing a Button type
+ Fornece um jeito fácil de inicializar um novo Button e excolher o seu type
  */
 
 class Button: UIButton {
     
     /**
-     The type of the Button
+     O tipo do Button
      
-     When this property changes, it updates the visual aspects of the Button to match this type
+     Quando essa propriedade muda, ela atualiza os aspectos visuais do Button para ficar de acordo com esse type
      */
     var type: CustomType = .rectangle {
         willSet {
@@ -35,7 +35,7 @@ class Button: UIButton {
     }
     
     /**
-     Creates a custom button of type `Button.CustomType.rectangle`
+     Cria um `Button` com type `Button.CustomType.rectangle`
      */
     init() {
         super.init(frame: .zero)
@@ -49,7 +49,7 @@ class Button: UIButton {
     }
     
     /**
-     Creates a custom button of type `Button.CustomType.rectangle` and sets it's title
+     Cria um `Button` com type `Button.CustomType.rectangle` e bota seu título
      - Parameter title: The title of the button
      */
     convenience init(title: String) {
@@ -65,7 +65,7 @@ class Button: UIButton {
 extension Button {
     
     /**
-     Possible types for the button
+     Tipods possíveis para o botão
      */
     enum CustomType {
         case rectangle, text

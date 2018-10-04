@@ -9,15 +9,15 @@
 import UIKit
 
 /**
- A custom subclass of UITextField
+ Uma subclasse customizada de UITextField
  
- Provides an easy way of initializing a new TextField
+ Fornece um jeito fácil de inicializar uma caixa de texto
  */
 
 class TextField: UITextField {
     
     /**
-     Sets up the default appearence of the TextField
+     Determina o visual padrão do TextField
      */
     fileprivate func setUp() {
         layer.cornerRadius = 8.0
@@ -29,7 +29,7 @@ class TextField: UITextField {
     }
 
     /**
-     Creates a custom TextField
+     Cria um TextField customizado
      */
     init() {
         super.init(frame: CGRect.zero)
@@ -37,8 +37,8 @@ class TextField: UITextField {
     }
     
     /**
-     Creates a custom TextField and sets it's placeholder text
-     - Parameter placeholder: The placeholder text shown in the TextField
+     Cria um TextField customizado e configura seu texto placeholder
+     - Parameter placeholder: O texto placeholder mostrado no TextField
      */
     convenience init(placeholder: String) {
         self.init()

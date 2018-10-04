@@ -9,15 +9,15 @@
 import UIKit
 
 /**
- A custom subclass of UILabel
+ Uma subclasse customizada de UILabel
  
- Provides an easy way of initializing a new Label
+ Fornece um jeito fácil de inicializar um novo Label
  */
 
 class Label: UILabel {
 
     /**
-     Creates a custom label
+     Cria um label customizado
      */
     init() {
         super.init(frame: .zero)
@@ -26,8 +26,8 @@ class Label: UILabel {
     }
     
     /**
-     Creates a custom label and sets it's text
-     - Parameter text: The text of the label
+     Cria um novo label e determina seu texto
+     - Parameter text: O texto do label
      */
     convenience init(text: String) {
         self.init()
